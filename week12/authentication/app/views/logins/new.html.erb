@@ -1,0 +1,16 @@
+<%= form_for @user, url: {action: "create"} do |f| %>
+
+  <%= f.label :email %>
+  <%=f.text_field :email %>
+
+  <br />
+
+  <%= f.label :password %>
+  <%=f.text_field :password %>
+
+  <br />
+
+  <%= check_box_tag "user[remember_me]" %>
+
+  <%= f.submit "Login" %>
+<% end %>
